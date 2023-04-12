@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bubble Sort</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #007bff;
+      text-align: center;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      background-color: #ffffff;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bubble Sort</h1>
+  <form action="/sort" method="post">
+    <label for="numElements">Number of Elements:</label>
+    <input type="number" id="numElements" name="numElements" required>
+    <br>
+    <label for="elements">Elements (comma-separated):</label>
+    <input type="text" id="elements" name="elements" required>
+    <br>
+    <button type="submit">Sort</button>
+  </form>
+  <h2>Sorted Array:</h2>
+  <pre>{{.SortedArray}}</pre>
+</body>
+</html>
